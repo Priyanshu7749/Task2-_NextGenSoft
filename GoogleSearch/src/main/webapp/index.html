@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic Input and Button</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Arial', sans-serif;
+        }
+
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background: linear-gradient(135deg, #d9afd9, #97d9e1); /* Pastel gradient */
+        }
+
+        .container {
+          text-align: center;
+        }
+
+        .input-field {
+          width: 300px;
+          padding: 12px;
+          border: 2px solid transparent;
+          border-radius: 25px;
+          font-size: 16px;
+          outline: none;
+          transition: all 0.4s ease;
+          background: #ffffff; /* Soft white */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-field:focus {
+          border: 2px solid #97d9e1; /* Light pastel blue */
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn {
+          margin-top: 20px;
+          padding: 12px 25px;
+          border: solid;
+          border-radius: 25px;
+          background: linear-gradient(135deg, #97d9e1, #d9afd9); /* Soft gradient */
+          color: black;
+          font-size: 16px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:hover {
+          background: linear-gradient(135deg, #d9afd9, #97d9e1); /* Reverse gradient */
+          transform: scale(1.1);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form action="search">
+        <input
+            type="text"
+            class="input-field"
+            placeholder="Type something..."
+            name = "search"
+        />
+        <button class="btn">Submit</button>
+    </form>
+</div>
+</body>
+</html>
