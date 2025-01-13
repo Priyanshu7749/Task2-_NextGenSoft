@@ -1,0 +1,24 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>myservlet</servlet-name>
+    <servlet-class>main.FisrtServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>myservlet</servlet-name>
+    <url-pattern>/service</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>myregistor</servlet-name>
+    <url-pattern>/registor</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>myregistor</servlet-name>
+    <servlet-class>main.Registor</servlet-class>
+  </servlet>
+</web-app>
